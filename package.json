@@ -1,11 +1,11 @@
 {
-  "version": "0.0.0",
+  "version": "0.1.0",
   "name": "galaxy-syntax",
   "description": "galaxy syntax theme",
   "theme": "syntax",
   "repository": {
-      "type": "git",
-      "url": "https://github.com/skullbunnygalaxy/inkdrop-galaxy-dark-syntax-theme.git"
+    "type": "git",
+    "url": "https://github.com/skullbunnygalaxy/inkdrop-galaxy-dark-syntax-theme.git"
   },
   "scripts": {
     "build": "lessc styles/less/default.less ./styles/index.css"
