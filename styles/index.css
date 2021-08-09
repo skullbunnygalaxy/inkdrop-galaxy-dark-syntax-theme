@@ -3,32 +3,32 @@
   /* Active Line Highlight support */
 }
 .editor .CodeMirror {
-  background-color: #1E1E3F;
+  background-color: #292957;
 }
 .editor .CodeMirror-scroll,
 .editor .CodeMirror-dialog {
-  color: #FAEFA5;
+  color: #ececc7;
 }
 .editor .CodeMirror-gutters {
   background-color: transparent;
-  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  border-right: 1px solid rgba(67, 7, 122, 0.1);
 }
 .editor .CodeMirror-linenumber {
-  color: #FF628C;
+  color: #9EFFFF;
 }
 .editor .CodeMirror-selected {
-  background-color: #FF628C;
-}
-.editor .CodeMirror-focused .CodeMirror-selected {
   background-color: #B362FF;
 }
+.editor .CodeMirror-focused .CodeMirror-selected {
+  background-color: rgba(0, 238, 255, 0.384);
+}
 .editor .CodeMirror-cursor {
-  border-left: 1px solid #FF628C;
+  border-left: 1px solid #A599E9;
 }
 .editor .CodeMirror-matchingbracket,
 .editor .CodeMirror-matchingtag {
   background: #6943FF !important;
-  color: #FF628C !important;
+  color: #FAEFA5 !important;
   border-bottom: 1px solid #b32a7e !important;
 }
 .editor .CodeMirror-foldgutter-open:after {
@@ -39,22 +39,25 @@
 }
 .editor .CodeMirror.over-gutter .CodeMirror-foldgutter-open:after,
 .editor .CodeMirror-activeline .CodeMirror-foldgutter-open:after {
-  color: #FF628C;
+  color: #A599E9;
 }
 .editor .CodeMirror-foldmarker {
-  border-color: #FF628C;
-  background-color: #FF628C;
+  border-color: #A599E9;
+  background-color: #A599E9;
   color: #6943FF;
 }
 .editor .CodeMirror .CodeMirror-linewidget img.inline-widget {
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(48, 14, 141, 0.1);
 }
 .editor .cm-searching {
   background-color: rgba(165, 69, 67, 0.4);
-  color: white !important;
+  color: #ffffff !important;
 }
 .editor .CodeMirror .cm-url {
-  color: #A5FF90;
+  color: #3AD900;
+}
+.editor .CodeMirror .cm-formatting-list.cm-variable-2 {
+  color: #3273ff;
 }
 .editor .CodeMirror .cm-atom,
 .editor .CodeMirror .cm-formatting-list.cm-variable-3,
@@ -68,22 +71,27 @@
 .editor .CodeMirror .cm-plus {
   color: #fda331;
 }
-.editor .CodeMirror .cm-def,
-.editor .CodeMirror .cm-property {
-  color: #9EFFFF;
-}
-.editor .CodeMirror .cm-variable {
-  color: #FF628C;
-}
-.editor .CodeMirror .cm-keyword,
-.editor .CodeMirror .cm-formatting-list.cm-variable-2,
-.editor .CodeMirror .cm-operator,
-.editor .CodeMirror .cm-meta,
-.editor .CodeMirror .cm-bracket {
+.editor .CodeMirror .cm-def {
   color: #B362FF;
 }
+.editor .CodeMirror .cm-property {
+  color: #8e3db4;
+}
+.editor .CodeMirror .cm-variable {
+  color: #e2446e;
+}
+.editor .CodeMirror .cm-keyword {
+  color: #31fafa;
+}
+.editor .CodeMirror .cm-operator {
+  color: #929cb0;
+}
+.editor .CodeMirror .cm-meta,
+.editor .CodeMirror .cm-bracket {
+  color: #FAEFA5;
+}
 .editor .CodeMirror .cm-comment {
-  color: #FF628C;
+  color: #3AD900;
   font-style: italic;
 }
 .editor .CodeMirror .cm-error,
@@ -94,17 +102,17 @@
   opacity: 0.3;
 }
 .editor .CodeMirror .cm-header {
-  color: #FAD000;
+  color: #A599E9;
 }
 .editor .CodeMirror .cm-link {
-  color: #A5FF90;
+  color: #FF7200;
   text-underline-position: under;
 }
 .editor .CodeMirror .cm-rangeinfo {
-  color: #9EFFFF;
+  color: #cec5ff;
 }
 .editor .CodeMirror .cm-builtin {
-  color: #A5FF90;
+  color: #FF7200;
 }
 .editor .CodeMirror .cm-qualifier,
 .editor .CodeMirror .cm-tag {
@@ -115,7 +123,7 @@
   font-style: italic;
 }
 .editor .CodeMirror .cm-whitespace::before {
-  color: #FF628C;
+  color: #a9eeff;
   opacity: 0.4;
 }
 .editor .CodeMirror .cm-formatting-quote,
@@ -131,15 +139,18 @@
 }
 .editor .CodeMirror .CodeMirror-code > div > pre > span::after,
 .editor .CodeMirror .CodeMirror-line > span::after {
-  color: #FF628C;
+  color: #5c34fc;
   opacity: 0.4;
 }
 .editor .CodeMirror .cm-inline-code {
-  background: rgba(0, 0, 0, 0.1);
-  color: #FFEE80;
+  background: rgba(111, 0, 255, 0.363);
+  color: #a9eeff;
 }
 .editor .CodeMirror .gfm-codeblock-bg.CodeMirror-linebackground {
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(111, 0, 255, 0.11);
+}
+.editor .CodeMirror .gfm-codeblock {
+  color: #a9eeff;
 }
 .editor .CodeMirror .cm-table-sep,
 .editor .CodeMirror .table-row.table-row-1 {

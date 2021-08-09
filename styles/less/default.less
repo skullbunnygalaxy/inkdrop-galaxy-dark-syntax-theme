@@ -8,24 +8,24 @@
   }
   .CodeMirror-scroll, .CodeMirror-dialog {
     // Color of otherwise un-styled text
-    color: @base01;
+    color: @base0X;
   }
   .CodeMirror-gutters {
     // Gutter to the left
     background-color: transparent;
-    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    border-right: 1px solid rgba(67, 7, 122, 0.1);
   }
   .CodeMirror-linenumber {
     // Line numbers in the gutter
-    color: @base06;
+    color: @base05;
   }
   .CodeMirror-selected {
     // Highlighed text
-    background-color: @base06;
+    background-color: @base07;
   }
   .CodeMirror-focused .CodeMirror-selected {
     // Highlighed text
-    background-color: @base07;
+    background-color: rgba(0, 238, 255, 0.384);
   }
   .CodeMirror-cursor {
     // The cursor
@@ -35,7 +35,7 @@
   .CodeMirror-matchingtag {
     // When you click a tag/bracket and the matching one is highlighted
     background: @base02 !important;
-    color: @base06 !important;
+    color: @base01 !important;
     border-bottom: 1px solid @base08 !important;
   }
   .CodeMirror-foldgutter-open:after {
@@ -60,12 +60,12 @@
     color: @base02;
   }
   .CodeMirror .CodeMirror-linewidget img.inline-widget {
-    background: rgba(0,0,0,0.1);
+    background: rgba(48, 14, 141, 0.1);
   }
   .cm-searching {
     // Ctrl + F results
     background-color: rgba(165, 69, 67, .4);
-    color: white !important;
+    color: rgb(255, 255, 255) !important;
   }
 
   /* All 'dem swatches */
@@ -73,6 +73,10 @@
   .CodeMirror {
     .cm-url {
       color: @base0F;
+    }
+
+    .cm-formatting-list.cm-variable-2 {
+      color: @base0Y;
     }
     .cm-atom,
     .cm-formatting-list.cm-variable-3,
@@ -86,22 +90,27 @@
     .cm-plus {
       color: @base0A;
     }
-    .cm-def,
-    .cm-property {
-      color: @base0C;
-    }
-    .cm-variable {
-      color: @base06;
-    }
-    .cm-keyword,
-    .cm-formatting-list.cm-variable-2,
-    .cm-operator,
-    .cm-meta,
-    .cm-bracket {
+    .cm-def {
       color: @base0E;
     }
+    .cm-property {
+      color: @base0Q;
+    }
+    .cm-variable {
+      color: @base0I;
+    }
+     .cm-keyword {
+       color: @base0W;
+     }
+    .cm-operator {
+      color: @base0V;
+    }
+    .cm-meta,
+    .cm-bracket {
+      color: @base01;
+    }
     .cm-comment {
-      color: @base06;
+      color: @base0F;
       font-style: italic;
     }
     .cm-error,
@@ -112,17 +121,17 @@
       opacity: 0.3;
     }
     .cm-header {
-      color: @base04;
+      color: @base06;
     }
     .cm-link {
-      color: @base0F;
+      color: @base0J;
       text-underline-position: under;
     }
     .cm-rangeinfo {
       color: @base0C;
     }
     .cm-builtin {
-      color: @base0F;
+      color: @base0J;
     }
     .cm-qualifier,
     .cm-tag {
@@ -133,7 +142,7 @@
       font-style: italic;
     }
     .cm-whitespace::before {
-      color: @base06;
+      color: @base0H;
       opacity: 0.4;
     }
     .cm-formatting-quote, .cm-formatting-strong, .cm-formatting-em {
@@ -148,17 +157,22 @@
 
     // carriage return
     .CodeMirror-code > div > pre > span::after, .CodeMirror-line > span::after {
-      color: @base06;
+      color: @base0L;
       opacity: 0.4;
     }
 
-    .cm-inline-code {
-      background: rgba(0, 0, 0, 0.1);
-      color: @base03;
+    .cm-inline-code {  //code blocks
+      background: rgba(111, 0, 255, 0.363);
+      color: @base0H;
     }
 
     .gfm-codeblock-bg.CodeMirror-linebackground {
-      background: rgba(0, 0, 0, 0.1);
+      background: rgba(111, 0, 255, 0.11);
+      
+    }
+
+    .gfm-codeblock{
+      color: @base0H;
     }
 
     .cm-table-sep, .table-row.table-row-1 {
