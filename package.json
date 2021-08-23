@@ -1,0 +1,18 @@
+{
+  "version": "1.0.0",
+  "name": "galaxy-syntax",
+  "description": "Galaxy syntax theme",
+  "theme": "syntax",
+  "scripts": {
+    "build": "lessc styles/less/default.less ./styles/index.css"
+  },
+  "styleSheets": [
+    "index.css"
+  ],
+  "engines": {
+    "inkdrop": "^5.x"
+  },
+  "devDependencies": {
+    "less": "^3.11.3"
+  }
+}
